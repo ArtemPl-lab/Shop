@@ -7,8 +7,7 @@ namespace Shop_online.Data.interfaces
 {
     interface IProducCategory
     {
-        IEnumerable<Instance> Products { get; set; }
-        IEnumerable<Instance> FavouriteProducts { get; set; }
-        Instance getObjectProduct(int id);
+
+        IEnumerable<Category> AllCategories { get; }
     }
 }

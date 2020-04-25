@@ -8,6 +8,8 @@ namespace Shop_online.Data.interfaces
 {
     interface IAllProduct
     {
-        IEnumerable<Category> AllCategories { get; }
+        IEnumerable<Instance> Products { get; set; }
+        IEnumerable<Instance> FavouriteProducts { get; set; }
+        Instance getObjectProduct(int id);
     }
 }
